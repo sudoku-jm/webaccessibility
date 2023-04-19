@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대체 텍스트</title>
+    <style>
+        selector{
+            display:none;
+            visibility: hidden;
+            font-size:0;
+            color:transparent;
+            text-indent:-1000px;
+            position: absolute; left:-1000%;
+        }
+        /* 마우스 또는 키보드 초점을 사라지게 만들어 화면 낭독기가 텍스트 정보를 읽지 못하므로, 사용자에게 제대로 정보를 전달할 수 없음. */
+
+        .hide{
+            overflow:hidden;
+            display:block;
+            position: absolute;
+            border:0;
+            width: 1px;
+            height:1px;
+            clip:rect(1px, 1px, 1px, 1px);
+        }
+        /* 
+            IR기법을 적용하면 마우스나 키보드의 초점이 사라지지 않음. 낭독기가 제대로 인식을 할 수 있다.
+        */
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
